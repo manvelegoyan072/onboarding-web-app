@@ -1,0 +1,21 @@
+buildscript {
+    dependencies {
+        classpath "com.github.node-gradle:gradle-node-plugin:3.2.1"
+    }
+}
+
+plugins {
+    id "com.github.node-gradle.node" version "3.2.1"
+    id 'java'
+}
+
+node {
+    download = false
+}
+
+group 'ru.onboarding.web.app'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
